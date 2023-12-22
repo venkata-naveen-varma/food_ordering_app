@@ -23,7 +23,7 @@ export const CreateVandor = async (req: Request, res: Response, next: NextFuncti
     const existingVandor = await FindVendor('', email);
 
     if(existingVandor !== null){
-        return res.json({ "message": "A vandor is exist with this email ID"})
+        return res.json({ "message": "A vandor exists with this email ID"})
     }
 
 
