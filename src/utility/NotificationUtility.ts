@@ -17,7 +17,7 @@ export const onRequestOTP = async(otp: number, toPhoneNumber: string) => {
 
     try {
         const accountSid = "Your Account SID from TWILIO DASHBOARD";
-        const authToken = "YOUR AUTH TOKEN AS I SAID ON VIDEO";
+        const authToken = "YOUR AUTH TOKEN";
         const client = require('twilio')(accountSid, authToken);
     
         const response = await client.message.create({
